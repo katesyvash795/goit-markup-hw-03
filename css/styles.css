@@ -12,6 +12,25 @@
 
 
 }
+p,
+h2,
+h3,
+h4,
+h5,
+h6{
+margin: 0;
+}
+ul{
+    padding-left: 0;
+    margin: 0;
+}
+button{
+    cursor: pointer;
+}
+address{
+font-style: normal;
+}
+
 .body{
 font-family:'Roboto', sans-serif  ;
 letter-spacing: 0.02em;
@@ -24,11 +43,27 @@ text-decoration: none;
 .list {
 list-style: none;
 }
+.container{
+width:1158px; 
+margin: 0 auto;
+padding-left:156px ;
+padding-right: 156px;
+outline:2px solid red;
+
+}
 /**______HEADER______**/
 .header {
 background-color:#ffffff;
 }
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 .header-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
 }
 
 .header-logo {
@@ -39,11 +74,15 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--color-logo); 
+margin-right: 76px;
 }
 .std{
 color: var(--color-logo-studio); 
 }
-
+.header-list{
+    display: flex;
+    gap: 40px;
+}
 .header-item {    font-weight: 500;
 letter-spacing: 0.02em;
 font-size: 16px;
@@ -59,6 +98,7 @@ color: var(--menu-color);
 
 .header-address {
 font-style: normal;
+display: flex;
 }
 .header-address-list {
 }
@@ -73,6 +113,7 @@ color: var(--hover-color);
 .header-contact {
 color: var(--adress-color)
 }
+
 /**______SOLUTION______**/
 .solution {
 background: #2E2F42;
@@ -83,6 +124,10 @@ line-height: 1.07;
 text-align: center;
 letter-spacing: 0.02em;
 color: #FFFFFF;
+padding: 188px 472px 292px;
+width: 496px;
+align-items: center;
+margin: auto ;
 }
 .solution-btn {
 font-family: inherit;
@@ -93,6 +138,8 @@ letter-spacing: 0.04em;
 color: #FFFFFF;
 background: #4D5AE5;
 cursor: pointer;
+padding: 16px 32px;
+margin-top: 48px;
 }
 .solution-btn:hover,.solution-btn :focus{
 font-size: 16px;
@@ -104,6 +151,9 @@ background: #404BBF;
 /**______WORKING______**/
 
 .Working {
+}
+.working-container{
+    display: flex;
 }
 .working-title {
 
@@ -137,6 +187,9 @@ color: var(--title-color);
 }
 .activities-item {
 }
+.activities-list-div{
+    display: flex;
+}
 
 /**______team______**/
 
@@ -166,6 +219,9 @@ color: var(--title-color);
 font-size: 16px;
 line-height: 1.5;
 color: #434455;
+}
+.container-team-list{
+    display: flex;
 }
 
 /**______footer______**/
